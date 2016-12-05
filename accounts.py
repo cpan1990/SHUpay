@@ -60,7 +60,7 @@ class Accounts:
             
     def check_forget_pass(self):
         
-        print("Have you forgotten your password, Option1=Y or Option2=N ")
+        print("Have you forgotten your password, Option=1 or Option=2 ")
         Option=input(":")
         Print(Option)
         if option == 2:
