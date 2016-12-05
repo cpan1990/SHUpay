@@ -60,10 +60,9 @@ class Accounts:
             
     def check_forget_pass(self):
         
-        print("Have you forgotten your password, Option=1 or Option=2 ")
-        Option=input(":")
-        Print(Option)
-        if option == 2:
+        option=input("Have you forgotten your password, option1=Y or option2=N ")
+        
+        if option == N:
             self.authenticate()
         else:
             self.validate_secret_question()
