@@ -34,6 +34,8 @@ class Accounts:
 
         else:
             print("Login failed, please try again.")
+            global authenticated
+            authenticated = False
             self.authenticate()
 
     def update_password(self):
