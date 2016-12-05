@@ -1,5 +1,6 @@
 #MAIN MODULE
     
+import database_nocsv
 from database_nocsv import Database
 from database_nocsv import credentials
 from database_nocsv import paymentmethoddb
@@ -20,11 +21,14 @@ date = input ("Please enter your date of birth, mm-dd-yyyy: ")
 verify_age = validDOB.age (date)
 if verify_age != 0:
     print ("User is %s years of age " %(verify_age))
-
-qty_ord = eval(input ("Enter quantity: "))
+    
+qty_ord = eval(input ("Enter CVV#: "))
 if blank_mod.blank_mod(qty_ord) == 1:
     quantity.quantity(qty_ord)
 
 credit = eval(input ("Enter credit card number: "))
 if blank_mod.blank_mod(credit) == 1:
     validCard.validCard(credit)
+    Database.addPaymentMethod (validCard, qty_ord, paymentmethoddb)
+    
+
