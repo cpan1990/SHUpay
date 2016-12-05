@@ -39,12 +39,4 @@ class Accounts:
             print("Login failed")
             self.authenticate()
 
-    def updatePassword(self):
-        username = self.authenticate()
-        password = input("Enter your new password:")
-        password2 = input("Confirm your new password:")
-
-        if password2 == password:
-            Database.updatePassword(self, username, password)
-
 accounts = Accounts()
