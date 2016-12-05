@@ -67,10 +67,10 @@ class Accounts:
             self.validate_secret_question()
 
     def validate_secret_question(self):
-        print ('Answe the Secret Qustions)#n')
-        print ('enter thewwhich college did you attend ')
+        print ('Answer the Secret Qustion)#n')
+        print ('which college did you attend ')
         college_name = input()
-        if college_name.upper()=='SACRED HEART':
+        if college_name.upper()=='SACRED HEART UNIVERSITY':
             self.update_password()
         else:
             print('entered value mismatching')
