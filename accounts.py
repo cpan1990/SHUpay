@@ -60,7 +60,7 @@ class Accounts:
             
     def check_forget_pass(self):
         print ('Did you forget the Password press 1 for Y and 2 for No')
-        option = input("Create a password:")
+        
         if option == 2:
             self.authenticate()
         else:
