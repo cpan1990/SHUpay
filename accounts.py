@@ -72,7 +72,7 @@ class Accounts:
         print ('which college did you attend ')
         college_name = input()
         if college_name.upper()=='SACRED HEART UNIVERSITY':
-            self.update_password()
+            Database.updatePassword(self, username, input("Enter your new password.")
         else:
             print('entered value mismatching')
 
