@@ -62,7 +62,7 @@ class Accounts:
         
         option=input("Have you forgotten your password, option1=Y or option2=N ")
         
-        if option == N:
+        if option == "N":
             self.authenticate()
         else:
             self.validate_secret_question()
