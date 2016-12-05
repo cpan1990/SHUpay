@@ -48,7 +48,7 @@ class Accounts:
             and any(x.isdigit() for x in password) and len(password) >= 8):
 
             if password == password2:
-                Database.registerAccount(self, username, password)
+                Database.updatePassword(self, username, password)
 
             else:
                 print("Passwords do not match. Please try again.")
