@@ -59,8 +59,10 @@ class Accounts:
             self.update_password()
             
     def check_forget_pass(self):
-        print ('Did you forget the Password press 1 for Y and 2 for No')
         
+        print("Have you forgotten your password, Option1=Y or Option2=N ")
+        Option=input(":")
+        Print(Option)
         if option == 2:
             self.authenticate()
         else:
