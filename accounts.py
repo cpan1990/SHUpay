@@ -68,7 +68,7 @@ class Accounts:
             self.validate_secret_question()
 
     def validate_secret_question(self):
-        print ('Answer the Secret Qustion)#n')
+        print ('Answer the Secret Question)#n')
         print ('which college did you attend ')
         college_name = input()
         if college_name.upper()=='SACRED HEART UNIVERSITY':
